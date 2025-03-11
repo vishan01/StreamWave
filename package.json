@@ -1,0 +1,31 @@
+{
+  "name": "streamwave",
+  "version": "1.0.0",
+  "description": "A video streaming and social media platform",
+  "keywords": [
+    "javascript"
+  ],
+  "homepage": "https://github.com/vishan01/StreamWave#readme",
+  "bugs": {
+    "url": "https://github.com/vishan01/StreamWave/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishan01/StreamWave.git"
+  },
+  "license": "ISC",
+  "author": "Vishnu Vardhan Gudipati",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
