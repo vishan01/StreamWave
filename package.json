@@ -16,6 +16,7 @@
   "license": "ISC",
   "author": "Vishnu Vardhan Gudipati",
   "main": "index.js",
+  "type":"module",
   "scripts": {
     "dev": "nodemon src/index.js"
   },
