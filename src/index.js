@@ -1,8 +1,8 @@
-const express= require('express');
-const cors = require('cors');
-const dotenv = require('dotenv');
-const cookieParser = require('cookie-parser');
-
+import express from 'express';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import cookieParser from 'cookie-parser';
+import {connectDB} from './db/index.js';
 dotenv.config({path:'./.env'});
 
 const app = express();
@@ -14,3 +14,5 @@ app.use(cors({
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
+
+connectDB();

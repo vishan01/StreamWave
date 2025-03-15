@@ -1,11 +1,11 @@
-const mongoose =require("mongoose");
+import mongoose from "mongoose";
 
 async function connectDB(){
     try {
         await mongoose.connect(process.env.MONGO_URI);
         console.log("MongoDB connected");
     } catch (error) {
-        console.error("MongoDB connection failed", error);
+        console.error("MongoDB connection failed\n",error);
         process.exit(1);
     }
 }
