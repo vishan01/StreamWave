@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
 
-const User=mongoose.Schema({
+const UserSchema=mongoose.Schema({
     
 })
+
+export const User= mongoose.model("User",UserSchema)
